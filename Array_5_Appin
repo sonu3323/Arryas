@@ -1,0 +1,13 @@
+  
+  //FIND DUPLICATE VALUES FROM THE OBJECT OF ARRAYS ************
+  
+  function toFindDuplicates(arrData: any) {
+    let arry = arrData.map((item: any) => item.email);
+    let resultToReturn = false;
+
+    resultToReturn = arry.some((element: any, index: number) => {
+      return arry.indexOf(element) !== index;
+    });
+
+    return resultToReturn;
+  }

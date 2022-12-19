@@ -1,3 +1,24 @@
+  UPLOAD FILE WITH THE FORMDATA ******************
+  
+ URL =>  https://www.pluralsight.com/guides/how-to-use-a-simple-form-submit-with-files-in-react
+  
+  const submitForm = () => {
+  const formData = new FormData();
+  formData.append("name", name);
+  formData.append("file", selectedFile);
+
+  axios
+    .post(UPLOAD_URL, formData)
+    .then((res) => {
+      alert("File Upload success");
+    })
+    .catch((err) => alert("File Upload Error"));
+};
+  
+  
+  
+  
+  
   
   //FIND DUPLICATE VALUES FROM THE OBJECT OF ARRAYS ************
   
